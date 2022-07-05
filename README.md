@@ -1,2 +1,2 @@
 # muringweb
-This is muring's official web page
+https://muring.itare.xyz
