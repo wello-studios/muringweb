@@ -51,9 +51,49 @@ div.main {
 }
 div.mainc {
   position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+div.policies {
+  height: 30vh;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(31, 27, 34);
+  position: relative;
+  background: linear-gradient(to right, rgb(213, 133, 181) 0%,
+  rgb(201, 98, 255) 100%);
+}
+div.privacy {
+  position: absolute;
+  display: inline-block;
   top: 50%;
   left: 25%;
   transform: translate(-50%, -50%);
+}
+p {
+  color: white;
+}
+div.pr {
+  position: relative;
+  display: inline-block;
+  color: white;
+  width: 80%;
+  margin-left: 10%;
+}
+div.info {
+  height: 200vh;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(19, 19, 19);
+  position: relative;
+}
+body.infom {
+
+  width: 100%;
+  margin: 0;
+  background-color: rgb(19, 19, 19);
+  position: relative;
 }
 .sec {
   height: 100vh;
@@ -75,6 +115,13 @@ a {
   -webkit-text-fill-color: transparent;
   font-size: 35px;
 }
+p.title2 {
+  display: inline-block;
+  font-family: ‘SUIT’, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 25px;
+}
 .subtitle {
   display: block;
   font-family: ‘SUIT’, sans-serif;
@@ -82,6 +129,16 @@ a {
   margin-top: -5%;
   color: rgb(117, 117, 117);
   font-size: 20px;
+}
+.privacytitle {
+  display: inline-block;
+  font-family: ‘SUIT’, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 35px;
+}
+.no_magin {
+  margin: 0;
 }
 .text {
   font-family: ‘SUIT’, sans-serif;
@@ -127,6 +184,7 @@ button.button3 {
   background-color: rgb(255, 163, 220);
   border: none;
   position: relative;
+  margin-left: 10px;
   padding: 7px 12px;
   transition: 0.3s;
   border-radius: 10px;
@@ -194,23 +252,16 @@ header {
   align-items: center;
 }
 
-.ht {
-  padding-top: 2rem;
-}
 
-header > nav {
-  width:340px;
-  height:100%;
-}
+
 
 header ul {
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  margin: 0 1rem;
 }
 
 header ul > li {
-  font-size: 20px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -250,32 +301,38 @@ header ul > li {
     background-position: 0% 50%;
   }
 }
+
 @media (max-width: 700px) {
+  div.mainc {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
   .title{
+    display: block;
     position: relative;
     text-align: center;
     margin-left: 0%;
-    top: 220px;
     font-family: ‘SUIT’, sans-serif;
     font-weight: 700;
     color: #000000;
-    font-size: 40px;
+    font-size: 4vh;
   }
   .subtitle {
     position: relative;
     text-align: center;
     margin-left: 0%;
     margin-top: -6%;
-    top: 220px;
+    font-size: 20px;
   }
   button.button{
     display: block;
-    top: 220px;
     margin: auto;
   }
   button.button2{
     display: block;
-    top: 230px;
+    top: 10px;
     margin: auto;
   }
 }
