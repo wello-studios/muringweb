@@ -59,17 +59,16 @@ div.policies {
   height: 30vh;
   width: 100%;
   margin: 0;
-  background-color: rgb(31, 27, 34);
   position: relative;
-  background: linear-gradient(to right, rgb(213, 133, 181) 0%,
-  rgb(201, 98, 255) 100%);
+  background: linear-gradient(to right, rgb(255, 105, 199) 0%,
+  rgb(255, 163, 207) 100%);
+  display: flex;
+  justify-content : center;
 }
 div.privacy {
   position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  top: 35%;
+  align-content: center;
 }
 p {
   color: white;
@@ -89,7 +88,6 @@ div.info {
   position: relative;
 }
 body.infom {
-
   width: 100%;
   margin: 0;
   background-color: rgb(19, 19, 19);
@@ -200,7 +198,7 @@ button.button3 {
            'GRAD' 200,
            'opsz' 48
 }
-ul {
+header ul {
   margin-right: 7%;
 }
 button.button3:hover {
@@ -221,9 +219,7 @@ button.button2 {
 button.button2:hover {
   background-color: rgb(141, 141, 141);
 }
-ul {
-  list-style: none;
-}
+
 
 a {
   text-decoration: none;
@@ -317,7 +313,7 @@ header ul > li {
     font-family: ‘SUIT’, sans-serif;
     font-weight: 700;
     color: #000000;
-    font-size: 4vh;
+    font-size: 4.5vh;
   }
   .subtitle {
     position: relative;
@@ -329,10 +325,16 @@ header ul > li {
   button.button{
     display: block;
     margin: auto;
+    width: 40vh;
+    padding: 9px 15px;
+    border-radius: 14px;
   }
   button.button2{
     display: block;
     top: 10px;
+    width: 40vh;
+    padding: 9px 15px;
     margin: auto;
+    border-radius: 14px;
   }
 }
