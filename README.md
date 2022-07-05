@@ -1,2 +1,2 @@
 # muringweb
-https://muring.itare.xyz
+https://muring.itare.xyz/
