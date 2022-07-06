@@ -43,10 +43,10 @@ button.button4:hover {
   background-color: rgba(217, 217, 217, 0.15);
 }
 div.main {
-  height: 80vh;
+  height: 84vh;
   width: 100%;
   margin: 0;
-  background-color: rgb(31, 27, 34);
+  background-color: rgb(17, 14, 17);
   position: relative;
 }
 div.mainc {
@@ -60,8 +60,7 @@ div.policies {
   width: 100%;
   margin: 0;
   position: relative;
-  background: linear-gradient(to right, rgb(255, 105, 199) 0%,
-  rgb(255, 163, 207) 100%);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content : center;
 }
@@ -78,7 +77,9 @@ div.pr {
   display: inline-block;
   color: white;
   width: 80%;
-  margin-left: 10%;
+  margin: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 div.info {
   height: 200vh;
@@ -100,7 +101,7 @@ body.infom {
    display: none; 
 }
 a {
-  text-decoration-line: none;
+  text-decoration: none;
   color: inherit;
 }
 .title {
@@ -118,7 +119,7 @@ p.title2 {
   font-family: ‘SUIT’, sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 25px;
+  font-size: 35px;
 }
 .subtitle {
   display: block;
@@ -219,8 +220,46 @@ button.button2 {
 button.button2:hover {
   background-color: rgb(141, 141, 141);
 }
-
-
+.footer {
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(17, 14, 17);
+    position: absolute;
+}
+.footer2 {
+  height: 150px;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(19, 19, 19);
+  position: absolute;
+}
+.footertext {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+    font-family: ‘SUIT’, sans-serif;
+    font-weight: 400;
+}
+.footernav {
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    color: rgb(120, 113, 122);
+    font-size: 15px;
+    font-family: ‘SUIT’, sans-serif;
+    font-weight: 400;
+}
+.footernav li {
+  list-style: none;
+}
+.footernav li:hover {
+    color: rgb(255, 255, 255);
+}
 a {
   text-decoration: none;
   outline: none;
@@ -241,7 +280,7 @@ header {
   height: 7px;
   padding: 1.7rem;
   color: white;
-  background-color: rgba( 255, 255, 255, 0);
+  background-color: rgba(44, 44, 44, 0.04);
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
@@ -337,4 +376,47 @@ header ul > li {
     margin: auto;
     border-radius: 14px;
   }
+  .footer {
+    height: 140px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(17, 14, 17);
+    position: absolute;
+  }
+  .footer2 {
+    height: 140px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(19, 19, 19);
+    position: absolute;
+  }
+  .footertext {
+    position: absolute;
+    justify-content: center;
+    left: 50%;
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+    font-family: ‘SUIT’, sans-serif;
+    font-weight: 400;
+    display: flex;
+  }
+  .footernav {
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(120, 113, 122);
+    font-size: 15px;
+    font-family: ‘SUIT’, sans-serif;
+    font-weight: 400;
+    display: flex;
+  }
+  .footernav li {
+    list-style: none;
+  }
+  .footernav li:hover {
+    color: rgb(255, 255, 255);
+  }
+
 }
