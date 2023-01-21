@@ -1,0 +1,415 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'pretendard'; 
+  margin: 0;
+  font-size: 16px;
+}
+body {
+  font-size: 16px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  background-color: #191919;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+
+/* 컨테이너 */
+
+div.main {
+  height: 80vh;
+  width: 100%;
+  background-color: #333031;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+div.mainbox {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+div.pngbox {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.shpic {
+  width: 22em;
+}
+div.buttons {
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: .8em;
+}
+div.con1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80vh;
+  background-color: #191919;
+}
+div.con3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: #191919;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+div.con2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 20vh;
+  background-image: linear-gradient(to right, #ab55cc 0%, #7459d4 100%);
+}
+div.infocon {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 버튼 */
+
+button.inviteBtn {
+  background-color: #7459d4;
+  border: none;
+  border-radius: .8em;
+  padding: .7em 3em;
+  font-size: .9em;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+button.inviteBtn:hover {
+  background-color: #8869fa;
+}
+button.inviteBtn2 {
+  background-color: #1b1a1a;
+  border: none;
+  border-radius: .8em;
+  padding: .7em 2.7em;
+  font-size: .9em;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+button.inviteBtn2:hover {
+  background-color: #413e3e;
+}
+button.fobtn {
+  background-color: transparent;
+  border: white 1.3px solid;
+  border-radius: .8em;
+  padding: .7em 3em;
+  font-size: .9em;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+button.inviteHeaderBtn {
+  background-color: #7459d4;
+  border: none;
+  border-radius: .5em;
+  padding: .5em 1.3em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+button.inviteHeaderBtn:hover {
+  background-color: #8869fa;
+}
+
+button.nheaderBtn {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-radius: .5em;
+  padding: .5em 1.3em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+button.nheaderBtn:hover {
+  background-color: rgba(126, 126, 126, 0.3);
+}
+
+/* 헤더 */
+header {
+  height: 3em;
+  width: 100%;
+  position: fixed;
+  color: white;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.headerDiv {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.headerBtns {
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.headerTitleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle {
+  color: #e7e7e7;
+  font-size: 1.3em;
+}
+.headerIcon {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 10em;
+  color: white;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+.footerDiv a {
+  color: white;
+}
+.footerIcon {
+  width: 2em;
+  height: 2em;
+}
+.teamLink {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.6em;
+  padding: .5em 1.3em;
+  background: transparent;
+  border-radius: .5em;
+  transition: all .2s ease-in-out;
+}
+.teamLink:hover {
+  background-color: #242424;
+}
+.pol {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.pol a:hover {
+  color: #7459d4;
+}
+/* 타이틀, 이미지, 아이콘 */
+
+
+
+.discordtitle {
+  font-size: 2.5em;
+}
+
+.subtitle{
+  padding-top: .9em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #919191;
+}
+
+.maintitle {
+  font-size: 3em;
+  color: white;
+
+}
+
+.sutitle {
+  font-size: 3em;
+  color: white;
+}
+
+.commandTitle {
+  font-size: 4em;
+  font-weight: 600;
+  color: #ffffff;
+}
+.commandTitle2 {
+  font-size: 4em;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.commandSubTitle {
+  padding-top: 1em;
+  line-height: 2em;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #919191;
+}
+.commandSubTitle2 {
+  line-height: 2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #919191;
+}
+.imgClass {
+  width: 30em;
+  height: 30em;
+}
+.vimgc {
+  width: 35em;
+  border-radius: 1.3em;
+}
+
+
+/* 기타 */
+
+.con2{
+  width: 100%;
+  height: 7em;
+  background-image: linear-gradient(45deg, #ab55cc 0%, #7459d4 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  transition: all 0.3s ease;
+}
+.con2 a {
+  font-size: 1.4em;
+  color: white;
+  transition: all 0.3s ease;
+}
+.con2 a:hover{
+  transform: scale(1.1);
+}
+
+
+/* 모바일 */
+
+@media (max-width: 1000px) {
+  * {
+    font-size: 10px;
+  }
+  .btna {
+    width: 100%;
+  }
+  div.con1, div.con3 {
+    flex-direction: column;
+  }
+  div.main {
+    height: 100vh;
+    flex-direction: column;
+  }
+  div.mainbox {
+    width: 80%;
+  }
+  footer {
+    height: 20em;
+    gap: 2em;
+  }
+  .footerDiv {
+    flex-direction: column-reverse;
+  }
+  .pol {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 3em;
+  }
+  .privacy, .tos, .discord {
+    font-size: 1.3em;
+  }
+  .maintitle {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  button.inviteBtn, button.inviteBtn2 {
+    font-size: 15px;
+    width: 100%;
+  }
+  div.buttons {
+    padding-top: 1.5em;
+    flex-direction: column;
+  }
+
+  header {
+    overflow: hidden;
+    height: 8em;
+  }
+  .headerTitleContent {
+    font-size: 10px;
+  }
+  .headera {
+    font-size: 10px;
+  }
+  .headerIcon {
+    font-size: 16px;
+  }
+  .headerTitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  button.nheaderBtn, .shpic, div.pngbox {
+    display: none;
+  }
+  .headerBtns {
+    gap: 0em;
+  }
+  button.inviteHeaderBtn {
+    font-size: 16px;
+  }
+
+  .discordtitle {
+    font-size: 15px;
+  }
+  div.con2 {
+    height: 13em;
+  }
+}

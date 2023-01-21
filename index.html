@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뮤링 - 간편하게 소환사의 정보를 검색하세요!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <noscript>Hello :)</noscript>
+</head>
+<body>
+    <header>
+        <div class="headerDiv">
+            <a href="index.html" class="headera"><div class="headerTitleContent"><p class="headerTitle">뮤링</p></div></a>
+            <div class="headerBtns">
+                <a href="#learnmore"><button type="button" class="nheaderBtn"><i class='bx bx-list-ul'></i>&nbsp;사용방법</button></a>
+                <a href="support.html"><button type="button" class="nheaderBtn"><i class='bx bxl-discord-alt'></i>&nbsp;커뮤니티</button></a>
+                <a href="invite.html"><button type="button" class="inviteHeaderBtn"><i class='bx bx-plus'></i>&nbsp;초대하기</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="mainbox">
+            <p class="maintitle" data-aos="fade-up" data-aos-duration="800">간단하게 소환사의 정보를 검색하세요!</p>
+            <p class="subtitle" data-aos="fade-up" data-aos-duration="1300">직관적인 명령어로 다양한 정보를 한눈에 확인하세요.</p>
+            <div class="buttons">
+                <a href="invite.html" class="btna"><button type="button" class="inviteBtn" data-aos="fade-up" data-aos-duration="1800">초대하기</button></a>
+                <a href="#learnmore" class="btna"><button type="button" class="inviteBtn2" data-aos="fade-up" data-aos-duration="1800">더 알아보기</button></a>
+            </div>
+        </div>
+        <div class="pngbox"><img src="src/sh2.png" alt="이미지" class="shpic"></div>
+    </div>
+    <div class="con1" id="learnmore">
+        <div class="comcon">
+            <p class="commandTitle" data-aos="fade-up">직관적인 UI</p>
+            <p class="commandSubTitle" data-aos="fade-up" data-aos-duration="1000">직관적인 UI로 쉽게 사용하세요.</p>
+        </div>
+        <video muted autoplay loop class="vimgc" data-aos="fade-up">
+            <source src="src/functions.mp4" type="video/mp4">
+            영상을 불러오는데 실패했습니다.
+        </video>
+    </div>
+    <div class="con3">
+        <div>
+            <p class="commandTitle" data-aos="fade-up">오랜 기간동안</p>
+            <p class="commandSubTitle" data-aos="fade-up" data-aos-duration="1000">많은 소환사들이 사용하고 있어요.</p>
+        </div>
+        <div class="infocon">
+            <div>
+                <p class="commandSubTitle2" data-aos="fade-up" data-aos-duration="1000">봇 생성일 부터</p>
+                <p class="commandTitle2" data-aos="fade-up" data-aos-duration="1300">3년+</p>
+            </div>
+            <div>
+                <p class="commandSubTitle2" data-aos="fade-up" data-aos-duration="1600">v3-1.0 서비스 시작일 부터</p>
+                <p class="commandTitle2" id="dday" data-aos="fade-up" data-aos-duration="1800">불러오는 중</p>
+            </div>
+        </div>
+    </div>
+    <div class="con2">
+        <h1 class="discordtitle" data-aos="zoom-out">지금 바로 초대하세요.</h1>
+        <a href="invite" id="join"><button class="fobtn" data-aos="zoom-out-up">초대하기 ›</button></a>
+    </div>
+    <footer>
+        <div class="footerDiv">
+            <a href="https://wellostudio.kr/new" class="teamLink">By<img src="wello.png" alt="wello" class="footerIcon">WELLOSTUDIO</a>
+            <div class="pol">
+                <a href="privacy.html" class="privacy">개인정보 처리방침</a>
+                <a href="tos.html" class="tos">서비스 이용 약관</a>
+                <a href="support.html" class="discord">디스코드</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true
+        });
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
